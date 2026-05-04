@@ -1,11 +1,11 @@
 # gPEPS.jl
 `gPEPS` is a Julia package for optimizing PEPS (Projected Entangled Pair States) using the simple update. 
 It is build on the [TensorKit-library](https://github.com/QuantumKitHub/TensorKit.jl) (v0.16.3) and
-implements the simple update as formulated in this [paper](https://arxiv.org/abs/1808.00680)
+implements the simple update as formulated in the [gPEPS paper](https://arxiv.org/abs/1808.00680).
 # Feature Overview
 - **PEPS Framework**: The simple update optimization can be performed on arbitrary periodic lattices in arbitrary dimensions.
 - **Expectation values**: Expectation values can be optained within the SU-framework.
-
+- **Examples**: In the examples folder we supply the example of the 3D-Heisenberg model and the star-lattice model discussed and benchmarked in the [gPEPS paper](https://arxiv.org/abs/1808.00680).
 # Minimal Example: Heisenberg Model on the square lattice in 2d
 
 ```julia
