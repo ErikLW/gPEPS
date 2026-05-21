@@ -83,10 +83,9 @@ function expectation_value_one_body(tens_arr, λ, S, op, i)
     row = S[i,:]
     A = tens_arr[i]
     #find the indices in each row of the Structure matrix that are nonzero. These label the lambda tensors relevant for this step:
-    ind_relevant_λ = findall(x -> !iszero(x), row)[1]
+    ind_relevant_λ = findall(x -> !iszero(x), row)
 
     #A_edge_ind = S[i, ind_relevant_λ] 
-
     #absorb the λ-matrices into the tensors A
     for jj in 1:length(ind_relevant_λ) #here we are looping to absorb all the lambda matrices
         
